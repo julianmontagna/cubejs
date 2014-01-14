@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+
+    <title>TooIt :: Web Consulting &amp; Development</title>
+
+    <meta name="description" content="Web consulting and development">
+    <meta name="keywords" content="web consulting, consulting services, software development, drupal, wordpress, animation, html5">
+    <meta name="author" content="TooIt">
+    <meta charset="UTF-8">
+
+    <!--[Google Web Fonts]-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.cube.css" type="text/css">
+
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/greensock/minified/TimelineMax.min.js"></script>
+    <script type="text/javascript" src="js/greensock/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/greensock/minified/plugins/CSSPlugin.min.js"></script>
+    <!--script type="text/javascript" src="js/greensock/minified/utils/Draggable.min.js"></script-->
+    <script type="text/javascript" src="js/Draggable.custom.js"></script>
+
+    <script type="text/javascript" src="js/GreenProp.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.cube.js"></script>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lte IE 7]>
+    <script src="js/IE8.js" type="text/javascript"></script><![endif]-->
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
+
+    <style>
+
+    .cube-bttn {
+      width: 500px;
+      height: 300px;
+      float: left;
+      margin: 50px;
+      border: 1px solid #ccc;
+      position: relative;
+    }
+
+    </style>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+
+        $("#my-cube1").cube({
+          drag: {
+            enabled: true
+          }
+        });
+
+        $("#my-cube2, #my-cube3, #my-cube4, #my-cube5, #my-cube6").cube({
+          animationOutOpacity: 1,
+          animationInOpacity: 1,
+          animationOutScale: 1,
+          animationInScale: 1,
+          animationTimeOutScale: 0,
+          animationTimeInScale: 0,
+          animationTimeCubeRotation: 0.25,
+          hideContentOnScale: false
+        });
+
+        $('#my-cube2').on('mouseenter', function(){
+          $(this).data('cube').cubeRotateToSide(2, true);
+        });
+
+        $('#my-cube3').on('mouseenter', function(){
+          $(this).data('cube').cubeRotateToSide(3, true);
+        });
+
+        $('#my-cube4').on('mouseenter', function(){
+          $(this).data('cube').cubeRotateToSide(4, true);
+        });
+
+        $('#my-cube5').on('mouseenter', function(){
+          $(this).data('cube').cubeRotateToSide(5, true);
+        });
+
+        $('#my-cube6').on('mouseenter', function(){
+          $(this).data('cube').cubeRotateToSide(6, true);
+        });
+
+        $('.cube-bttn').on('mouseleave', function(){
+          $(this).data('cube').cubeRotateToSide(1, true);
+        });
+
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <div id="my-cube1" class="cube-bttn">
+      <div>Button</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>Button over</div>
+    </div>
+
+    <div id="my-cube2" class="cube-bttn">
+      <div>Button</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>Button over</div>
+    </div>
+
+    <div id="my-cube3" class="cube-bttn">
+      <div>Button</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>Button over</div>
+    </div>
+
+    <div id="my-cube4" class="cube-bttn">
+      <div>Button</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>Button over</div>
+    </div>
+
+    <div id="my-cube5" class="cube-bttn">
+      <div>Button</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>Button over</div>
+    </div>
+
+    <div id="my-cube6" class="cube-bttn">
+      <div>Button</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>Button over</div>
+    </div>
+
+  </body>
+</html>

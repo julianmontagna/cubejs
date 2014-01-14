@@ -1,0 +1,83 @@
+
+/**
+ * Cube sides base skin.
+ */
+
+.side {
+  overflow: hidden;
+  z-index: 100;
+}
+
+.side-0 {
+  background-color: #ffffff;
+}
+
+.side-1 {
+  background-color: #AAAAAA;
+}
+
+.side-2 {
+  background-color: #CCCCCC;
+}
+
+.side-3 {
+  background-color: #EEEEEE;
+}
+
+.side-4 {
+  background-color: #777777;
+}
+
+.side-5 {
+  background-color: #333333;
+}
+
+/**
+ * Needed for scrolling content outside the cube.
+ */
+
+.side-content {
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+/**
+ * Cube drag base skin.
+ */
+
+.dragg-control {
+  background-color: #444;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: move;
+  margin: 40px;
+
+  position: absolute;
+  z-index: 1000;
+}
+
+.dragg-control {
+  -webkit-border-radius: 100px;
+     -moz-border-radius: 100px;
+          border-radius: 100px;
+}
+
+/**
+ * Debugger
+ */
+
+.debug-cube {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 400px;
+  z-index: 9999;
+  background-color: #000;
+  opacity: 0.8;
+  padding: 20px;
+  color: #fff;
+}
