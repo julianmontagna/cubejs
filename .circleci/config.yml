@@ -13,3 +13,5 @@ jobs:
       - checkout
       - run:
           command: echo "sarasa"
+      - run:
+          command: exit 125
